@@ -1,0 +1,7 @@
+services:
+  wanda-cicd-test:
+    build: .
+    container_name: wanda-cicd-test
+    ports:
+      - "80:80"
+    restart: unless-stopped
